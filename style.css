@@ -19,12 +19,16 @@ main {
     ;
 }
 
+h1,
+h2 {
+    margin: 1rem;
+}
 
 div {
-    width: 80%;
     border: 1px solid gray;
     border-radius: 10px;
     padding: 20px;
+    margin: 20px;
     text-align: center;
     box-shadow:  31px 31px 62px #d6d3d3ee,
              -31px -31px 62px #ffffff;
@@ -40,6 +44,10 @@ div {
 i {
    font-size: 5rem;
    margin: 10px;
+}
+
+p {
+    font-size: 1rem;
 }
 
 a {
