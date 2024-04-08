@@ -9,24 +9,21 @@
 
 main {
     background: linear-gradient(45deg,#ba88ec,#f980c4e7,#974eea);
-    display: flex;
+    display: grid;
+    grid-template-rows:repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas: 
+    "title      title       aboutme     cv"
+    "projects   contact     icon        icon"
+    ;
 }
 
-header {
-    position: absolute;
-}
-button {
-    border: none;
-    background: none;
-    position: right;
-    padding-left: 300px;
-}
 
 div {
     width: 80%;
     border: 1px solid gray;
     border-radius: 10px;
-    margin: 20px;
     padding: 20px;
     text-align: center;
     box-shadow:  31px 31px 62px #d6d3d3ee,
@@ -47,4 +44,30 @@ i {
 
 a {
     text-decoration: none;
+}
+
+/* grid */
+
+.title {
+    grid-area: title;
+}
+
+.aboutme {
+    grid-area: aboutme;
+}
+
+.cv {
+    grid-area: cv;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.icon {
+    grid-area: icon;
 }
