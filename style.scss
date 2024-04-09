@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import'./undersites/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tilt Neon';
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #ba88ec, #f980c4e7, #974eea);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+//mainpage start
+
+#mainpage {
+    main {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        grid-template-areas:
+            "title      title       aboutme     cv"
+            "projects   contact     icon        icon"
+        ;
+
+        h1,
+        h2 {
+            margin: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        div {
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 31px 31px 62px #d6d3d3ee,
+                -31px -31px 62px #ffffff;
+            color: white;
+
+            i {
+                font-size: 5rem;
+                margin: 10px;
+            }
+
+            p {
+                font-size: $fontsizep;
+            }
+        }
+    }
+}
+
+/* grid */
+
+.title {
+    grid-area: title;
+}
+
+.aboutme {
+    grid-area: aboutme;
+}
+
+.cv {
+    grid-area: cv;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.icon {
+    grid-area: icon;
+}
+
+//mainpage end
+
+// aboutme start
+
+#aboutme {
+    header {
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem;
+
+        img {
+            width: 200px;
+            border-radius: 20px;
+            box-shadow: 31px 31px 62px #d6d3d3ee,
+                -31px -31px 62px #ffffff;
+        }
+    }
+
+    main {
+        i {
+            color: gray;
+            font-size: 1rem;
+        }
+
+        section {
+            padding: 20px;
+        }
+    }
+
+    footer {
+        a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 20px;
+        }
+
+        i {
+            font-size: 1rem;
+        }
+    }
+}
+
+//aboutme end
+
+// cv start
+
+#cv {
+    header {
+        background-image: url(./img/pexels-nacho-abad-21207831.jpg);
+        background-size: cover;
+        height: 200px;
+    }
+
+    section {
+        display: flex;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 20px;
+    }
+
+    table {
+        margin: 20px;
+        padding: 5px;
+
+        caption {
+            font-size: 1.5rem;
+        }
+
+        th {
+            margin-bottom: 5px;
+        }
+
+        td {
+            border: 1px solid gray;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    }
+
+    footer {
+        padding: 20px;
+        a {
+            text-decoration: none;
+            color: white;
+
+            i {
+                color: gray;
+            }
+        }
+    }
+}

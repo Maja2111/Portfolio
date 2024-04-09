@@ -1,81 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Tilt Neon';
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Tilt Neon";
+  box-sizing: border-box;
 }
 
-main {
-    background: linear-gradient(45deg,#ba88ec,#f980c4e7,#974eea);
-    display: grid;
-    grid-template-rows:repeat(2, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    grid-template-areas: 
-    "title      title       aboutme     cv"
-    "projects   contact     icon        icon"
-    ;
+body {
+  background: linear-gradient(45deg, #ba88ec, rgba(249, 128, 196, 0.9058823529), #974eea);
+  background-repeat: no-repeat;
+  color: white;
 }
 
-h1,
-h2 {
-    margin: 1rem;
+#mainpage main {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-template-areas: "title      title       aboutme     cv" "projects   contact     icon        icon";
 }
-
-div {
-    border: 1px solid gray;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
-    box-shadow:  31px 31px 62px #d6d3d3ee,
-             -31px -31px 62px #ffffff;
-    color: white;
+#mainpage main h1,
+#mainpage main h2 {
+  margin: 1rem;
 }
-
-.firstblock,
-.secondblock {
-    border: none;
-    box-shadow: none;
+#mainpage main a {
+  text-decoration: none;
 }
-
-i {
-   font-size: 5rem;
-   margin: 10px;
+#mainpage main div {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 31px 31px 62px rgba(214, 211, 211, 0.9333333333), -31px -31px 62px #ffffff;
+  color: white;
 }
-
-p {
-    font-size: 1rem;
+#mainpage main div i {
+  font-size: 5rem;
+  margin: 10px;
 }
-
-a {
-    text-decoration: none;
+#mainpage main div p {
+  font-size: 1.5rem;
 }
 
 /* grid */
-
 .title {
-    grid-area: title;
+  grid-area: title;
 }
 
 .aboutme {
-    grid-area: aboutme;
+  grid-area: aboutme;
 }
 
 .cv {
-    grid-area: cv;
+  grid-area: cv;
 }
 
 .projects {
-    grid-area: projects;
+  grid-area: projects;
 }
 
 .contact {
-    grid-area: contact;
+  grid-area: contact;
 }
 
 .icon {
-    grid-area: icon;
+  grid-area: icon;
 }
+
+#aboutme header {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+#aboutme header img {
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 31px 31px 62px rgba(214, 211, 211, 0.9333333333), -31px -31px 62px #ffffff;
+}
+#aboutme main i {
+  color: gray;
+  font-size: 1rem;
+}
+#aboutme main section {
+  padding: 20px;
+}
+#aboutme footer a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 20px;
+}
+#aboutme footer i {
+  font-size: 1rem;
+}
+
+#cv header {
+  background-image: url(./img/pexels-nacho-abad-21207831.jpg);
+  background-size: cover;
+  height: 200px;
+}
+#cv section {
+  display: flex;
+}
+#cv h1 {
+  text-align: center;
+  margin: 20px;
+}
+#cv table {
+  margin: 20px;
+  padding: 5px;
+}
+#cv table caption {
+  font-size: 1.5rem;
+}
+#cv table th {
+  margin-bottom: 5px;
+}
+#cv table td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  padding: 5px;
+}
+#cv footer {
+  padding: 20px;
+}
+#cv footer a {
+  text-decoration: none;
+  color: white;
+}
+#cv footer a i {
+  color: gray;
+}
+
+/*# sourceMappingURL=style.css.map */
