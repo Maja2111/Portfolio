@@ -68,6 +68,15 @@ body {
   grid-area: icon;
 }
 
+.title:hover,
+.aboutme:hover,
+.cv:hover,
+.projects:hover,
+.contact:hover,
+.icon:hover {
+  transform: scale(0.6);
+}
+
 #aboutme header {
   display: flex;
   justify-content: space-around;
@@ -171,6 +180,62 @@ body {
   color: white;
 }
 #projects footer a i {
+  color: gray;
+}
+
+#contact h1 {
+  text-align: center;
+  margin: 20px;
+}
+#contact legend {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+#contact form label {
+  margin: 10px;
+}
+#contact form input,
+#contact form textarea {
+  border-radius: 5px;
+  padding: 20px;
+}
+#contact form input:focus,
+#contact form textarea:focus {
+  outline: 5px solid purple;
+}
+#contact .socialmedia a {
+  text-decoration: none;
+}
+#contact .socialmedia a i {
+  color: black;
+  font-size: 2rem;
+  letter-spacing: 5rem;
+  margin: 20px;
+}
+#contact button {
+  margin-left: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ba88ec;
+}
+#contact button:hover {
+  transition: 400ms ease-in-out;
+  background: transparent;
+}
+#contact footer {
+  padding: 20px;
+}
+#contact footer a {
+  text-decoration: none;
+  color: white;
+}
+#contact footer a i {
   color: gray;
 }
 
