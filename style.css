@@ -78,6 +78,9 @@ body {
   border-radius: 20px;
   box-shadow: 31px 31px 62px rgba(214, 211, 211, 0.9333333333), -31px -31px 62px #ffffff;
 }
+#aboutme main {
+  display: flex;
+}
 #aboutme main i {
   color: gray;
   font-size: 1rem;
@@ -85,13 +88,15 @@ body {
 #aboutme main section {
   padding: 20px;
 }
-#aboutme footer a {
-  color: white;
-  font-size: 1.5rem;
-  margin: 20px;
+#aboutme footer {
+  padding: 20px;
 }
-#aboutme footer i {
-  font-size: 1rem;
+#aboutme footer a {
+  text-decoration: none;
+  color: white;
+}
+#aboutme footer a i {
+  color: gray;
 }
 
 #cv header {
@@ -129,6 +134,43 @@ body {
   color: white;
 }
 #cv footer a i {
+  color: gray;
+}
+
+#projects h1 {
+  text-align: center;
+  margin: 20px;
+}
+#projects h5,
+#projects p {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+#projects .wrapper {
+  width: 800px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#projects .arrow {
+  color: gray;
+  background-color: lightgrey;
+  border-radius: 100px;
+}
+#projects .carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+#projects footer {
+  padding: 20px;
+}
+#projects footer a {
+  text-decoration: none;
+  color: white;
+}
+#projects footer a i {
   color: gray;
 }
 

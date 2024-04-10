@@ -84,6 +84,8 @@ body {
     grid-area: icon;
 }
 
+
+
 //mainpage end
 
 // aboutme start
@@ -103,6 +105,8 @@ body {
     }
 
     main {
+        display: flex;
+
         i {
             color: gray;
             font-size: 1rem;
@@ -114,14 +118,15 @@ body {
     }
 
     footer {
-        a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 20px;
-        }
+        padding: 20px;
 
-        i {
-            font-size: 1rem;
+        a {
+            text-decoration: none;
+            color: white;
+
+            i {
+                color: gray;
+            }
         }
     }
 }
@@ -167,6 +172,7 @@ body {
 
     footer {
         padding: 20px;
+
         a {
             text-decoration: none;
             color: white;
@@ -177,3 +183,54 @@ body {
         }
     }
 }
+
+// cv end 
+
+// projects start
+
+#projects {
+    h1 {
+        text-align: center;
+        margin: 20px;
+    }
+
+    h5,
+    p {
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+    .wrapper {
+        width: 800px;
+        height: $carousel-height;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .arrow {
+        color: gray;
+        background-color: lightgrey;
+        border-radius: 100px;
+    }
+    .carousel-item {
+        img {
+            height: $carousel-height;
+            object-fit: cover;
+        }
+    }
+    footer {
+        padding: 20px;
+
+        a {
+            text-decoration: none;
+            color: white;
+
+            i {
+                color: gray;
+            }
+        }
+    }
+}
+
+// projects end
+

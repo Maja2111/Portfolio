@@ -1,0 +1,41 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("./bilder/20.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+iframe {
+    width: 200px; height: 360px; border: 0;
+    border-radius:20px; border:1px solid rgba(0, 0, 0, 0.12); max-width:500px;
+}
+
+.bilder {
+    width: 40%;
+    border-radius: 200px;
+}
+
+img {
+    width: 80%;
+    margin: auto;
+}
+
+div {
+    width: 600px;
+    background-color: rgba(231, 215, 141, 0.774);
+    padding: 50px;
+    border-radius: 30px;
+    border-style: outset;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: brown;
+    text-align: center;
+}
+
+/* No Angels html */

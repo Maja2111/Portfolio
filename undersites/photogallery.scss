@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Protest+Revolution&family=Shadows+Into+Light&display=swap');
+
+* {
+    font-family: 'Caveat';
+    box-sizing: border-box;
+    background-color: bisque;
+}
+
+/* grid */
+
+figure {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px;
+    grid-template-areas:
+        "wineglass      wineglass       geometrical_heart   geometrical_heart"
+        "braid          braid           holding_hands       holding_hands"
+        "two_thumbler   two_thumbler    two_thumbler        two_thumbler"
+        "two_arms       two_arms        MM                  MM"
+        "mountains      mountains       hand_with_heart     hand_with_heart"
+        "street         street          street              street"
+        "avocato        avocato         anatomical_heart    anatomical_heart "
+        "flowers        flowers         onethumbler         onethumbler"
+        "coffeelover    coffeelover     hexagon             hexagon"
+        "leaf           leaf            leaf                leaf"
+    ;
+}
+
+.anatomical_heart {
+    grid-area: anatomical_heart;
+}
+
+.geometrical_heart {
+    grid-area: geometrical_heart;
+}
+
+.mountains {
+    grid-area: mountains;
+}
+
+.two_thumbler {
+    grid-area: two_thumbler;
+}
+
+.wineglass {
+    grid-area: wineglass;
+}
+
+.hand_with_heart {
+    grid-area: hand_with_heart;
+}
+
+.braid {
+    grid-area: braid;
+}
+
+.holding_hands {
+    grid-area: holding_hands;
+}
+
+.two_arms {
+    grid-area: two_arms;
+}
+
+.coffeelover {
+    grid-area: coffeelover;
+}
+
+.street_view {
+    grid-area: street;
+}
+
+.To-Go-thumbler {
+    grid-area: onethumbler;
+}
+
+.avo-cat-o {
+    grid-area: avocato;
+}
+
+.leaf {
+    grid-area: leaf;
+}
+
+.flowers {
+    grid-area: flowers;
+}
+
+.minnimouse {
+    grid-area: MM;
+}
+
+.hexagon {
+    grid-area: hexagon;
+}
+
+/* header */
+h1 {
+    text-align: center;
+}
+
+/* figure */
+
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+    padding: 5px;
+    background-color: gray;
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px;
+}
+
+.overlay {
+    position: absolute;
+    color: rgba(0, 0, 0, 0);
+    background: transparent;
+    top: 18rem;
+    left: 3rem;
+}
+
+.flowers .ol {
+    top: 17rem;
+    left: 2rem;
+}
+
+.ol {
+    position: absolute;
+    color: rgba(0, 0, 0, 0);
+    background: transparent;
+}
+
+
+/* footer */
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+a,
+li {
+    display: flex;
+    color: black;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* hover */
+
+img:hover {
+    rotate: y 190deg;
+    transition: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+img:hover~.overlay {
+    color: rgba(0, 0, 0, 1);
+    transition-delay: 1.5s;
+}
+
+img:hover ~ .ol {
+    color: rgb(253, 253, 253);
+    transition-delay: 1.5s;
+}
