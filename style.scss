@@ -86,16 +86,20 @@ body {
 
 // hover 
 
-.title:hover,
+
 .aboutme:hover,
 .cv:hover,
 .projects:hover,
 .contact:hover,
-.icon:hover {
-    transform: scale(0.6);
+ {
+    transform: scale(0.7);
+    transition: 1s ease-in-out;
 }
 
-
+.title:hover,
+.icon:hover {
+    transform: scale(1.1);
+}
 
 //mainpage end
 
@@ -147,12 +151,6 @@ body {
 // cv start
 
 #cv {
-    header {
-        background-image: url(./img/pexels-nacho-abad-21207831.jpg);
-        background-size: cover;
-        height: 200px;
-    }
-
     section {
         display: flex;
     }

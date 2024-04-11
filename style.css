@@ -68,13 +68,17 @@ body {
   grid-area: icon;
 }
 
-.title:hover,
 .aboutme:hover,
 .cv:hover,
 .projects:hover,
-.contact:hover,
+.contact:hover {
+  transform: scale(0.7);
+  transition: 1s ease-in-out;
+}
+
+.title:hover,
 .icon:hover {
-  transform: scale(0.6);
+  transform: scale(1.1);
 }
 
 #aboutme header {
@@ -108,11 +112,6 @@ body {
   color: gray;
 }
 
-#cv header {
-  background-image: url(./img/pexels-nacho-abad-21207831.jpg);
-  background-size: cover;
-  height: 200px;
-}
 #cv section {
   display: flex;
 }
